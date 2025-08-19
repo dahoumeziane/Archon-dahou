@@ -19,7 +19,7 @@ def run_command(command, cwd=None):
         text=False,  
         cwd=cwd
     )
-    
+    print("Hello world")
     for line in process.stdout:
         try:
             decoded_line = line.decode('utf-8', errors='replace')
